@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(../images/bg-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.walk{
+    background-image: url(../images/walk.png);
+    width: 245px;
+    height: 219px;
+    position: absolute;
+    top: 390px;
+    animation: walk 1s steps(6) infinite, walking 8s linear infinite;
+}
+
+@keyframes walk{
+    0%{
+        background-position: 0;
+    }
+    100%{
+        background-position: 1467px;
+    }
+
+}
+
+@keyframes walking{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(1400px);
+    }
+       
+
+}
